@@ -1,0 +1,102 @@
+<!-- Genrar la pagina de html con ! o Html:5 -->
+<!-- Doctype es la ultima version de html -->
+<!DOCTYPE html>
+<!-- Lang es el lenguaje Es = español, En = english -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inputs</title>
+  </head>
+  <body>
+    <h1>Tipos de Inputs</h1>
+    <!-- Input es una caja que puede ser de texto, numeros, 
+        fecha, colores, hora, archivos, checkbox, radiobutton -->
+
+    <input
+      type="text"
+      placeholder="Ingresa tu Nombre"
+      value="Default"
+      name="nombre"
+      id="mi_nombre"
+    />
+
+    <input
+      type="text"
+      placeholder="Ingresa tu Apellido"
+      name="apellido"
+      id="mi_apellido"
+    />
+
+    <h2>Input Number</h2>
+    <input 
+      type="number" 
+      placeholder="Ingrese su edad"
+      name="edad"
+      id="mi_edad"
+    />
+
+    <h2>Input email y password</h2>
+    <input type="mail" placeholder="Ingrese su correo"
+    name="correo" id="mi_email">
+
+    <input type="password" placeholder="Ingrese su password"
+    name="password" id="mi_password">
+
+    <!-- Submit a diferencia de un button es para formularios -->
+    <input type="submit" value="Ingresar">
+
+    <h2>Input de tipo Fecha y Hora</h2>
+    <h2>Input Date</h2>
+    <input type="date"
+    >
+    <input type="time">
+    <input type="datetime-local">
+
+    <!-- Regex Html -->
+
+    <h2>Input Archivo</h2>
+    <input type="file">
+    <!-- Input only pdf -->
+    <input type="file" accept="application/pdf*">
+    <!-- Input only images -->
+    <input type="file" accept="image/*">
+    <!-- Input only audio -->
+    <input type="file" accept="audio/*">
+    <!-- Input only images -->
+    <input type="file" accept="video/*">
+
+    <!-- Input de tipo Checkbox -->
+    <!-- Indica que se puede seleccion mas de un elemento []
+    es de opcion multiple -->
+    <p>
+      <input type="checkbox" name="opcion_check[]"> checkbox 1
+      <input type="checkbox" name="opcion_check[]"> checkbox 1
+      <input type="checkbox" name="opcion_check[]"> checkbox 1
+    </p>
+    
+
+    <!-- Inputs de tipo radiobuton -->
+    <!-- Para poder seleccionar solo uno se le coloca el atributo name
+    con el mismo nombre -->
+    <p>
+      <input type="radio" name="opcion_radio" checked> Radio 1
+      <input type="radio" name="opcion_radio"> Radio 2
+      <input type="radio" name="opcion_radio"> Radio 3
+    </p>
+
+    <!-- Input de tipo Color -->
+    <input type="color">
+
+    <!-- Input de rango -->
+    <input type="range">
+
+    <!-- Input search -->
+    <input type="search">
+
+    <!-- Input Telefono -->
+    <input type="tel">
+    
+  </body>
+</html>
