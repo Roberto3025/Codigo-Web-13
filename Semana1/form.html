@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <!-- Formularios -->
+    <h1>Formuarios</h1>
+    <!-- Action = direccion hacia donde vamos 
+        enviar los datos del formulario -->
+    <!-- Tipo de mtodo http que usaremos para 
+        enviar la informacion = 
+        get post put delete-->
+        <!-- get obtiene, post enviar inf, 
+        put utilizarla, dele eliminarla-->
+    <form action="" method="get">
+        <input type="text" placeholder="Ingrese su nombre"
+        name="nombre" id="mi_nombre" required>
+        <!-- Required - atribute que hace que campo sea obligatorio -->
+        <!-- Readonly - Solo lectura pero se envia al servidor -->
+        <!-- Diseabled - no se envia al servidor -->
+        <input type="text" value="127.0.0.1" readonly
+        name="ip" id="mi_ip" required>
+
+        <input type="text" name="numerohijos" disabled>
+
+        <input type="number" min="0" max="100" step="5">
+
+        <input type="text" placeholder="Ingrese su DNI"
+        name="dni" id="mi_dni" maxlength="8" minlength="8" >
+
+        <input type="email" placeholder="Ingrese su email"
+        name="email" id="mi_email">
+
+        <input type="password"
+        name="password" id="mi_password">
+
+        <input type="submit" value="Ingresar">
+    </form>
+</body>
+</html>
