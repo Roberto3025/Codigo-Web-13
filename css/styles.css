@@ -1,0 +1,33 @@
+body {
+    font-family: Helvetica;
+}
+
+.link-referencia {
+    background-color: blue;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.link-referencia:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.contenedor-principal {
+    text-align: center;
+}
+
+.imagen-perfil {
+    border-radius: 50%;
+    border: 2px solid red;
+}
+
+btn-github {
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}

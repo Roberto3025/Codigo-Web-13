@@ -1,0 +1,157 @@
+body {
+    font-family: Helvetica;
+}
+
+h1 {
+    background-color: black;
+    color: red;
+}
+
+h2 {
+    background-color: #22e8dc;
+    color: green;
+}
+
+p {
+    /* background-color: aqua; */
+    color: green;
+}
+
+a {
+    color: pink;
+    background-color: yellowgreen;
+}
+
+/* La forma en la cual enlazamos un id en css es usando el 
+#nombre del id */
+/* los ID son unicos */
+
+#contenedor-uno {
+    background-color: blue;
+}
+
+#contenedor-dos {
+    background-color: yellow;
+}
+
+/* para poder compartir stilos debemos usar clases y son con (.) */
+
+.contenedor-principal {
+    background-color: violet;
+    /* ++++++ padding espacio interno */
+    padding: 30px;
+}
+
+.btn-ingresar {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+.btn-registro {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* Se puede compartir stilos adicionandole la clase al elemento */
+/* El estilo es en cascada y predomina siempre el segundo 
+o ultimo estilo */
+
+.contenedor-form {
+    /* ancho, tipo color */
+    border: 5px solid rgb(255, 136, 0);
+    border-radius: 8px;
+}
+
+.contenedor-interno-form {
+    padding: 20px;
+    text-align: center;
+}
+
+.titulo-form {
+    background-color: white;
+}
+
+.input-form {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid black;
+    width: 400px;
+}
+
+.input-codigo {
+    width: 100px;
+}
+
+.input-numero {
+    width: 278px;
+}
+
+.button-submit {
+    background-color: blue;
+    color: cornsilk;
+    width: 423px;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+}
+
+/* Pseudoclases */
+/* elementos tienen propiedades internas */
+
+/* hover - propiedad que detecta cuando el mouse 
+   esta sobre el elemento 
+   es decir solo se aplica cuando esta sobre ese elemento
+   */
+
+.btn-ingresar:hover {
+    background-color: red;
+    color: black;
+    text-decoration: none;
+}
+
+/* 
+link
+visited
+hover
+active
+
+estas pseudoclases aplican para todos los elementos de html*/
+
+/* busqueda de elementos en cascada */
+.contenedor-interno-form h1 {
+    color: coral;
+}
+
+/* aplica estilos al primer elemento p */
+/*
+P
+P
+P
+P
+ */
+.contenedor-interno-form p {
+    border: red 1px solid;
+}
+
+p:first-child {
+    border: black 5px solid;
+}
+
+/* El primero de este tipo */
+input:first-of-type {
+    color: green;
+}
+
+h2:nth-child(2) {
+    color: grey;
+}
