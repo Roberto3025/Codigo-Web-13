@@ -1,0 +1,62 @@
+/* 
+Pading es de forma interna 
+Va de adentro hacia afuera
+            I
+        ---HOLA----
+            I
+*/
+
+/* 
+Margin es de forma externa
+va de afuera hacia adentro
+              I
+
+       ---   HOLA   ----
+
+              I
+*/
+
+
+/*  * = todos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial;
+}
+
+.contenedor p{
+    color: red;
+}
+
+.contenedor-dos h2{
+    color: blue;
+}
+
+.contenedor-tres a img {
+    border: 2px solid blue;
+}
+
+.menu-navegacion {
+    margin: 20px;
+}
+
+/* Identificar que un li es un hijo neto 
+Si el ul no existe el li tampoco*/
+/* ul > li {
+    border: 2px solid green;
+} */
+
+.link-navegacion {
+    border: 2px solid green;
+}
+
+input[type="email"] {
+    background-color: red;
+}
+
+input[type="text"] {
+    color: green;
+}

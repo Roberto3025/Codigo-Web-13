@@ -1,3 +1,8 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 body {
     font-family: Helvetica;
 }
@@ -8,6 +13,7 @@ body {
     padding: 8px;
     text-decoration: none;
     border-radius: 5px;
+    margin: 20px;
 }
 
 .link-referencia:hover {
@@ -17,6 +23,35 @@ body {
 
 .contenedor-principal {
     text-align: center;
+}
+
+.contenedor-clases {
+    height: 100vh;
+    background-color: yellow;
+}
+
+.lista-semanas {
+    margin: 40px;
+    padding: 40px;
+    /* quita los puntos a la lista */
+    list-style: none;
+}
+
+h3 {
+    font-size: 3em;
+    margin: 20px;
+}
+
+.divisor {
+    margin: 20px;
+    height: 4px;
+    background-color: red;
+    border: none;
+    border-radius: 12px;
+}
+
+.lista-semanas li {
+    padding: 20px;
 }
 
 .imagen-perfil {
@@ -30,4 +65,12 @@ btn-github {
     padding: 10px;
     color: black;
     text-decoration: none;
+}
+
+.imagen-programador {
+    border-radius: 8px;
+    margin-top: 40px;
+    /* margin-left: ;
+    margin-right: ;
+    margin-bottom: ; */
 }
