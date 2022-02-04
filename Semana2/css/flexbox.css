@@ -1,0 +1,76 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    /* quitar puntos  a la lista */
+    list-style: none;
+}
+
+.section-principal {
+    /* para poder usar flex nuestro div padre debe tener flex */
+    /* por defaul flex alinea los elementos en fila (row) */
+    display: flex;
+    /* por defecto esta propiedad esta en row (fila) 
+        row-reverse invierte el orden y comienza a la derecha
+        column-reverse - invierte columnas
+    */
+    flex-direction: row;
+    /* nowrap - hace que tus elementos se adapten a una sola fila 
+       wrap - ocupa mas de una fila
+    */
+    flex-wrap: wrap;
+}
+
+.section-principal div {
+    /* border: 4px solid green; */
+    width: 25%;
+}
+
+.section-dos {
+    display: flex;
+    /* te permite alinear elementos - vertical */
+    align-items: center;
+    /* te permite centrar tanto a la derecha como a la izquierda 
+    Horizontal*/
+    /* Muy al borde - justify-content: space-between; */
+    justify-content: space-around;
+    border: 2px solid green;
+    height: 50vh;
+}
+
+/* flex-grow y flex-shrink son para los elementos del padre */
+
+.section-dos div {
+    border: 2px solid blue;
+    height: 10vh;
+    background-color: red;
+}
+
+/* flex-grow - para agrandar espacios*/
+.flex-grow {
+    flex-grow: 1;
+}
+
+.flex-grow-2 {
+    flex-grow: 4;
+}
+
+/* flex-shrink */
+.flex-shrink {
+    flex-shrink: 2;
+    /* !important permite dale prioridad a alguna propiedad */
+    background-color: rgb(22, 204, 22) !important;
+}

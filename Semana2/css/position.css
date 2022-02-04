@@ -1,0 +1,75 @@
+/* 
+positions por defecto tienen static
+existen
+
+absolute - siempre d emueve a raiz o base al padre, para que 
+funcione el padre siempre tiene que se relative
+Hay una excepcion cuando su padre en el body osea no tiene 
+te permite moverte por todo el padre
+
+relative - va a dejar que mi elemento de mueva por toda la web, 
+se basa en si mismo
+
+fixed - nos permite colocar un elemento fijo que no se mueva 
+con el scroll
+
+sticky -
+
+z-index - nos permite colocarnos entre capas
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav {
+    background-color: aqua;
+    border: 3px solid #f01;
+    display: block;
+    height: 15vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border: 4px solid #f01;
+  }
+  
+  .section-uno {
+    border: 3px solid rgb(0, 238, 255);
+    position: relative;
+    height: 100vh;
+    top: 130px;
+    z-index: -1;
+    /* left: 100px; */
+    /* right: 100px; */
+  }
+  
+  .titulo-principal {
+    border: 3px solid rgb(60, 255, 0);
+    position: absolute;
+  }
+  
+  .section-dos {
+    border: 2px solid #f01;
+    height: 40vh;
+    position: relative;
+  }
+  
+  .contenedor-uno {
+    position: absolute;
+    /* left: 40%; */
+    bottom: 0;
+  }
+  
+  .contenedor-uno p {
+    display: inline-block;
+  }
+
